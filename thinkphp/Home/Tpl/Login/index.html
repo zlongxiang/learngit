@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login-index</title>
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/CSS/basic.css">
+    <script type="application/javascript" src="__PUBLIC__/JS/login.js"></script>
+</head>
+<body>
+<form action="__URL__/do_login" method="post" name="myForm">
+    <table border="1px">
+        <tr><td class="login">用户名：</td><td><input type="text" name="username"/></td></tr>
+        <tr><td class="login">密码：</td><td><input type="password" name="password"/></td></tr>
+        <tr><td class="login">验证码：</td><td><input type="text" name="code"/></td></tr>
+        <tr><td><img src="__APP__/Public/code" onclick="this.src=this.src+'?'+Math.randon"></td>
+            <td><img src="/thinkphp/Public/Images/login.gif" onclick="sub()"/></td></tr>
+        <tr><td>欢迎您</td><td><a href="__APP__/Register/index">注册</a></td></tr>
+    </table>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register-index</title>
+    <script>
+    function subm() {
+         var ou=document.myForm.reg_username;
+         var op1 = document.myForm.reg_password;
+         var op2 = document.myForm.r_reg_password;
+
+
+         if (ou.value == '' || op1.value == '' || op2.value == ''){
+            alert('请填写完整！');
+         }
+         if(ou.value !== '' && op1.value !== '' && op2.value !== ''  && op1.value === op2.value){
+            document.myForm.submit();
+         }
+         if(op1.value !== '' || op2.value !=='' && op1.value!== op2.value){
+            alert('两次密码不一致！！');
+         }
+    }
+
+    </script>
+</head>
+<body>
+<form action="__URL__/search" method="post" name="myForm">
+    <table border="1px">
+        <tr>
+            <td class="register">用户名：</td>
+            <td><input type="text" name="reg_username"/></td>
+        </tr>
+        <tr>
+            <td class="register">登入密码：</td>
+            <td><input type="password" name="reg_password"/></td>
+        </tr>
+        <tr>
+            <td class="register">再次输入登入密码：</td>
+            <td><input type="password" name="r_reg_password"/></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="reg_sex" value="1" checked>男<input type="radio" name="reg_sex" value="0" >女</td>
+            <td><img src="/thinkphp/Public/Images/login.gif" onclick="subm()"/></td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

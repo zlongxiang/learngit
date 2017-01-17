@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User-index</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/CSS/basic.css" >
+    <script>
+        function jump(){
+            window.location="/thinkphp/index.php/User/add";
+        }
+    </script>
+</head>
+<body>
+<form action="/thinkphp/index.php/User/search" method="post">
+    姓名：<input type="text" name="username" >
+    性别：男<input type="radio" name="sex" value="1">女<input type="radio" name="sex" value="0">
+    <input type="submit" value="search">
+</form>
+<table border="1px" width="200" align="center">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>sex</th>
+        <th>操作</th>
+    </tr>
+    <volist name="data" id="vo">
+        <tr>
+            <td><{$vo.id}></td>
+            <td><{$vo.username}></td>
+            <td><{$vo.sex}></td>
+            <td><a href="/thinkphp/index.php/User/modify/id/<{$vo.id}>">修改</a> |
+                <a href="/thinkphp/index.php/User/delete/id/<{$vo.id}>">删除</a>
+            </td>
+        </tr>
+    </volist>
+</table>
+<center><button onclick="jump()">增加用户</button></center>
+<p>hello <{$name}></p>
+</body>
+</html>

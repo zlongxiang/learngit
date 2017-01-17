@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User-add</title>
+</head>
+<body>
+<form action="/thinkphp/index.php/User/create" method="post">
+    姓名：<input type="text" name="name" value="<{$data.name}>"><br/>
+    性别：男<input type="radio" name="sex" value="1">
+    女<input type="radio" name="sex" value="0"><br/>
+    <input type="submit" value="添加新用户">
+</form>
+</body>
+</html>
