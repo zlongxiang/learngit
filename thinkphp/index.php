@@ -15,4 +15,4 @@
 	require_once './ThinkPHP/ThinkPHP.php';
 	echo 'hello';
 	echo 'At develop branch';
-	echo 'zhushi';
+	echo '注释：中文';

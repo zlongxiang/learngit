@@ -11,4 +11,4 @@
 	define('APP_DEBUG', TRUE);
 	
 	require_once './ThinkPHP/ThinkPHP.php';
-	echo 'At develop branch';//注释部分，可以忽略
+	echo '已经注释掉这条';//注释部分，可以忽略
