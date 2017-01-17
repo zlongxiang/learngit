@@ -13,6 +13,3 @@
 	
 	
 	require_once './ThinkPHP/ThinkPHP.php';
-class AA{
-	
-}
