@@ -11,4 +11,4 @@
 	define('APP_DEBUG', TRUE);
 	
 	require_once './ThinkPHP/ThinkPHP.php';
-	echo 'At develop branch';
+	echo 'At develop branch';//注释部分，可以忽略
