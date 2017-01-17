@@ -11,3 +11,4 @@
 	define('APP_DEBUG', TRUE);
 	
 	require_once './ThinkPHP/ThinkPHP.php';
+	echo 'At develop branch';
